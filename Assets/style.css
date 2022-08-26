@@ -58,6 +58,7 @@ nav {
   text-decoration: none;
   font-size: larger;
   padding-bottom: 2px;
+  font-weight: bold;
 }
 
 /*To apply the style of the background-image*/
@@ -92,13 +93,15 @@ nav {
       rgba(255, 255, 255, 0.75)
     ),
     url("images/image.jpg");
-
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 40px 20px;
   display: flex;
   justify-content: left;
+}
+p {
+  font-weight: bold;
 }
 
 /*Style of all the h2 titles*/
@@ -140,6 +143,8 @@ h2 {
     url("images/coding-portfolio.jpeg");
   background-size: cover;
   background-attachment: fixed;
+  border-bottom: double;
+  border-color: var(--dark);
 }
 
 .flex-row {
@@ -243,6 +248,7 @@ footer {
   color: var(--dark);
   font-size: larger;
   padding-bottom: 2px;
+  font-weight: bold;
 }
 
 /*Code for media query */
@@ -305,6 +311,7 @@ footer {
     flex-wrap: wrap;
     min-width: 270px;
     border-bottom: double;
+    border-color: var(--dark);
   }
 
   /*Removes the line/border*/
@@ -313,9 +320,19 @@ footer {
     padding-left: 0;
   }
 
+  #work {
+    border-bottom: double;
+    border-color: var(--dark);
+  }
+
+  .work-info {
+    justify-content: center;
+  }
+
   /*Sets the minimum size of the header*/
   footer {
     min-width: 270px;
+    justify-content: center;
   }
 
   .infos ul {
