@@ -64,15 +64,18 @@ nav {
 /*To apply the style of the background-image*/
 .hero {
   height: 400px;
-  position: relative;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.075)
+      rgba(255, 255, 255, 0)
     ),
     url("images/greece.jpg");
   background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   flex-wrap: wrap;
   align-content: flex-start;
+  border-bottom: double;
+  border-color: var(--dark);
 }
 
 /*Customizes the style of the profile picture*/
@@ -99,7 +102,11 @@ nav {
   padding: 40px 20px;
   display: flex;
   justify-content: left;
+  min-width: 270px;
+  border-bottom: double;
+  border-color: var(--dark);
 }
+
 p {
   font-weight: bold;
 }
@@ -300,29 +307,25 @@ footer {
     margin: 0 65px;
   }
 
+  #about-me {
+    flex-wrap: wrap;
+  }
+
   h2 {
     width: 100%;
     text-align: center;
     font-weight: bold;
   }
 
-  /*Sets the width of the div about me*/
-  #about-me {
-    flex-wrap: wrap;
+  #work {
+    background-size: cover;
     min-width: 270px;
-    border-bottom: double;
-    border-color: var(--dark);
   }
 
   /*Removes the line/border*/
   .border {
     border-right: transparent;
     padding-left: 0;
-  }
-
-  #work {
-    border-bottom: double;
-    border-color: var(--dark);
   }
 
   .work-info {
