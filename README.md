@@ -54,3 +54,5 @@ HTML
 CSS
 
 # Link to deployed application
+
+https://faye3091.github.io/Portfolio-Challenge-Module-2/
