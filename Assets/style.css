@@ -199,6 +199,11 @@ h2 {
   position: relative;
 }
 
+.item5 {
+  object-fit: cover;
+  position: relative;
+}
+
 .image2 {
   width: 100%;
   height: 100%;
